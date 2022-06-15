@@ -1,3 +1,60 @@
 .contact-us {
     background-color: $color-background;
+    padding: 62px 0 82px;
+}
+
+.contact-us__title {
+    margin: 0 0 17px;
+}
+
+.contact-us__text {
+    margin: 0 0 33px;
+    max-width: 525px;
+}
+
+.contact {
+    margin: 0 0 22px;
+    display: flex;
+    align-items: center;
+}
+
+.contact__link {
+    color: $color-text;
+    @include font(2.5rem, 2.6rem, 400);
+    text-decoration: none;
+    margin-left: 11px;
+    @extend %transition;
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+.contact-us__form {
+    input, textarea {
+        border: 1px solid $color-light;
+        background: $color-light;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        &:focus {
+            border-color: $color-primary;
+            outline: none;
+        }
+    }
+
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 160px;
+    }
+}
+
+.contact-us__line {
+    margin-bottom: 19px;
+}
+
+.contact-us__button {
+    >* {
+        min-width: 117px;
+    }
 }

@@ -1,0 +1,37 @@
+.tools {
+    padding: 80px 0 0;
+}
+
+.tools__wrapper {
+    padding-bottom: 90px;
+    background-image: url(../../img/backgrounds/bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.tools__title {
+    max-width: 462px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
+.tools__button {
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+//Tool Block
+.tool__icon {
+    margin: 0 0 30px;
+}
+
+.tool__title {
+    margin: 0 0 16px;
+}
+
+.tool__text {
+    margin: 0;
+}

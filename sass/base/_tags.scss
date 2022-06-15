@@ -1,0 +1,40 @@
+.tags {
+    display: flex;
+    >* {
+        margin-right: 7px;
+    }
+}
+
+.tag {
+    @include font(1.3rem, 2.8rem, 400);
+    border-radius: 90px;
+    padding: 0 14px;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    @extend %transition;
+
+    &_selected {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        color: $color-light;
+        &:hover {
+            background-color: $color-additional;
+            border-color: $color-additional;
+        }
+    }
+
+    &_bordered {
+        background-color: $color-light;
+        border-color: $color-border;
+        &:hover {
+            border-color: $color-primary;
+        }
+    }
+    &_colored {
+        background-color: $color-tag;
+        border-color: $color-tag;
+    }
+    
+
+}
