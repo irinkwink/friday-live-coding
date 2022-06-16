@@ -1,14 +1,27 @@
 .promo {
     padding: 30px 0;
+    overflow: hidden;
+    @include media-tablet {
+        padding: 12px 0 30px;
+    }
+    @include media-mobile {
+        padding: 12px 0;
+    }
 }
 .promo__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media-mobile {
+        flex-direction: column-reverse;
+    }
 }
 
 .promo__content {
-    padding-right: 65px;
+    min-width: 380px;
+    @include media-mobile {
+        text-align: center;
+    }
 }
 
 .promo__title {
@@ -20,13 +33,39 @@
     @extend %font-add;
     @include font(1.8rem, 2.8rem, 400);
     margin: 0 0 45px;
+    @include media-mobile {
+        @include font(1.6rem, 2.4rem, 400);
+    }
 }
 
 .promo__buttons {
     display: flex;
-    
+
+    >* {
+        margin-right: 44px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+
+    @include media-mobile {
+        flex-direction: column;
+        align-items: center;
+
+        >* {
+            margin: 0 0 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
-.promo__buttons>* {
-    margin-right: 44px;
+
+.promo__image {
+    @include media-mobile {
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
 }

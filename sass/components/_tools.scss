@@ -1,5 +1,11 @@
 .tools {
     padding: 80px 0 0;
+    @include media-tablet {
+        padding: 48px 0 21px;
+    }
+    @include media-mobile {
+        padding: 37px 0 33px;
+    }
 }
 
 .tools__wrapper {
@@ -20,10 +26,34 @@
 .tools__button {
     margin-top: 60px;
     text-align: center;
+    @include media-tablet {
+        margin-top: 54px; 
+    }
+    @include media-mobile {
+        margin-top: 38px; 
+    }
 }
 
 
 //Tool Block
+.tool {
+    @include media-tablet {
+        text-align: center;
+        flex-basis: 48%;
+        margin-bottom: 54px; 
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    @include media-mobile {
+        flex-basis: 100%; 
+        margin-bottom: 47px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
 .tool__icon {
     margin: 0 0 30px;
 }

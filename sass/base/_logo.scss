@@ -1,3 +1,10 @@
+.logo-object {
+    @include media-mobile {
+        width: 130px;
+        height: auto;
+    }
+}
+
 .logo-path {
     @extend %transition;
 }

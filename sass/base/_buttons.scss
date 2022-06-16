@@ -1,10 +1,18 @@
 .button {
     @extend %font-primary;
     @include font(1.6rem, 2.2rem, 600);
-    padding: 11px 25px 13px;
+    padding: 15px 38px 16px;
     border-radius: 4px;
     cursor: pointer;
     @extend %transition;
+    &_header {
+        padding: 11px 27px 13px;
+    }
+
+    &_promo {
+        padding-left: 41px;
+        padding-right: 41px;
+    }
 
     &_bordered {
         background: $color-light;
